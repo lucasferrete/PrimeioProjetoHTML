@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <title>Aula 2</title>
+    <style>
+        table, th, td{
+            border: 2px solid rgb(168, 119, 119);
+            text-align: center;
+        }
+        #tabela{
+            width: 30%;
+            border-collapse: collapse;
+        }
+        th{
+            height: 50px;
+            background-color: rosybrown;
+            vertical-align: middle;
+            color:seashell;
+        }
+        tr:hover{
+            background-color:rgb(216, 186, 186);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#sobrenos">Sobre Nós</a></li> <!--Hiperlink para elemento com esse id-->
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="ball">
+            Promoção!
+        </div>
+    </header>
+
+    <section> <!--Seção-->
+        <article id="container">
+            <hgroup>
+                <div class="box">
+                    <h1>Vacina já!</h1>
+                    <p>Esperando a vacina!</p>
+                </div>
+
+                <div class="box">
+                    <h1>Fatec Campinas</h1>
+                    <p>Curso ADS</p>
+                </div>
+            </hgroup>
+        </article>
+    </section>
+
+    <hr>
+
+    <section id="sobrenos">
+        <h1>Sobre nós</h1>
+        <pre>
+            What is Lorem Ipsum?
+            Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown 
+            printer took a galley of type and scrambled it to make 
+            a type specimen book. It has survived not 
+			only five centuries, 
+            but also the leap into electronic typesetting, 
+            remaining essentially unchanged. It was popularised 
+            in the 1960s with the release of Letraset sheets containing 
+            Lorem Ipsum passages, and more recently with desktop 
+			publishing software 
+            like Aldus PageMaker including versions of Lorem Ipsum
+        </pre>
+    </section>
+
+    <hr>
+
+    <section id="produtos">
+        <h1>Produtos</h1>
+        <ol id="lista">
+            <li>Calçados</li>
+            <li>Roupas</li>
+            <li>Acessórios</li>
+            <li>Moletons</li>
+        </ol>
+
+        <dl id="lista"> <!--Lista de definição-->
+            <dt>Calçados</dt> <!--Titulo-->
+            <dd>Sapatos estilosos</dd> <!--Conteúdo-->
+            <dt>Camisas</dt>
+            <dd>Feitas de material sustentável</dd>
+            <dt>Acessórios</dt>
+            <dd>Colares e braceletes</dd>
+            <dt>Moletons</dt>
+            <dd>Feitos de algodão</dd>
+            
+        </dl>
+
+    </section> 
+
+    <section>
+        <h1>Tabela de Produtos</h1>
+        <table id="tabela"> <!--Tabela-->
+            <thead> <!--Cabeçalho-->
+                <tr> <!--Linha-->
+                    <th>Produtos</th> <!-- Titulo-->
+                    <th rowspan="4">Descrição</th>
+                    <th>Preço</th> <!--Colspan e Rowspan-->
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td><img src="imagens/calcado.jpg" width="100" height="100"></td>
+                    <td>Material de qualidade</td>
+                    <td>R$ 250,00</td>
+                </tr>
+    
+                <tr>
+                    <td><img src="imagens/camisa.jpg" width="100" height="100"></td>
+                    <td>Camisas sociais</td>
+                    <td>R$ 100,00</td>
+                </tr>
+                <tr>
+                    <td><img src="imagens/colar.jpg" width="100" height="100"></td>
+                    <td>Colar folheado</td>
+                    <td>R$ 75,00</td>
+                </tr>
+                <tr>
+                    <td><img src="imagens/moletom.jpg" width="100" height="100"></td>
+                    <td>Moletom  100% algodão</td>
+                    <td>R$ 150,00</td>
+                </tr>
+            </tbody>
+    
+        </table>
+
+    </section>
+
+    <hr>
+
+    <section id="contato">
+        <h1>Contato</h1>
+        <big id="form">Entre em contato conosco!</big><small>Teremos prazer em atendê-los.</small><br>
+        <big id="form">Rua: Maylaski, 120, Bairro da Lapa, São Paulo</big><br><br>
+
+        <form id="form">
+            <label for="nome">Nome</label><br>
+            <input type=text name="nome" id="nome" placeholder="Digite seu nome" required><br>
+            <label for="email">E-mail</label><br>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required><br>
+            <label for="mensagem">Mensagem</label><br>
+            <textarea cols="50" rows="5" placeholder="Digite sua mensagem" required></textarea><br>
+            <input type="submit" value="Enviar" id="botao">
+            <input type="reset" value="Limpar" id="botao">
+        </form>
+    </section>
+    <footer></footer>
+</body>
+</html>
